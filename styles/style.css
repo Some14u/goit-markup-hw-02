@@ -4,6 +4,8 @@
   --light-gray: #f5f4fa;
   --blue-c: #2196f3;
   --blue-c2: #188ce8;
+  --white-c: #fff;
+  --black-c: #000;
   --text-c-1: #212121;
   --text-c-2: #757575;
 }
@@ -15,7 +17,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  background-color: #fff;
+  letter-spacing: .03em;
+  background-color: var(--white-c);
 }
 
 button[type="button"] {
@@ -36,8 +39,7 @@ button[type="button"] {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: .03em;
-  color: #000;
+  color: var(--black-c);
 }
 
 .logo > span {
@@ -87,14 +89,14 @@ header .phone {
   text-align: center;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-c);
 }
 
 .order-section .order {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: .06em;
-  color: #fff;
+  color: var(--white-c);
   background: var(--blue-c);
 }
 
@@ -107,14 +109,12 @@ header .phone {
 .feature > h3 {
   font-weight: 700;
   line-height: 1.143;
-  letter-spacing: .03em;
   text-transform: uppercase;
   color: var(--text-c-1);
 }
 
 .feature > p {
   line-height: 1.71;
-  letter-spacing: .03em;
   color: var(--text-c-2);
 }
 
@@ -122,7 +122,6 @@ h2 { /* Заголовок во всех секциях одинаковый, п
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  letter-spacing: .03em;
   color: var(--text-c-1);
 }
 
@@ -135,7 +134,7 @@ h2 { /* Заголовок во всех секциях одинаковый, п
 }
 
 .team-member {
-  background: #fff;
+  background: var(--white-c);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -149,7 +148,6 @@ h2 { /* Заголовок во всех секциях одинаковый, п
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
-  letter-spacing: .03em;
   color: var(--text-c-1);
 }
 
@@ -166,13 +164,12 @@ footer {
 }
 
 footer > .logo {
-  color: #fff;
+  color: var(--white-c);
 }
 
 footer > address {
-  letter-spacing: .03em;
   line-height: 1.715;
-  color: #fff;
+  color: var(--white-c);
 }
 
 footer > address li { /* Эти блоки нужны из-за косяка в эскизе */
@@ -182,8 +179,8 @@ footer > address li { /* Эти блоки нужны из-за косяка в 
 footer a {
   text-decoration: none;
   font-style: normal;
-  letter-spacing: .03em;
-  color: rgba(255,255,255,.6);
+  color: rgba(var(--white-c));
+  opacity: 60%;
 }
 
 
@@ -206,7 +203,7 @@ footer a {
 
 .proj-filter button.selected {
   background-color: var(--blue-c);
-  color: #fff;
+  color: var(--white-c);
 }
 
 /* Single project */
