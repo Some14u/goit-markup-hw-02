@@ -39,6 +39,7 @@ button[type="button"] {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: .03em;
   color: var(--black-c);
 }
 
@@ -109,12 +110,14 @@ header .phone {
 .feature > h3 {
   font-weight: 700;
   line-height: 1.143;
+  letter-spacing: .03em;
   text-transform: uppercase;
   color: var(--text-c-1);
 }
 
 .feature > p {
   line-height: 1.71;
+  letter-spacing: .03em;
   color: var(--text-c-2);
 }
 
@@ -122,6 +125,7 @@ h2 { /* Заголовок во всех секциях одинаковый, п
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
+  letter-spacing: .03em;
   color: var(--text-c-1);
 }
 
@@ -148,6 +152,7 @@ h2 { /* Заголовок во всех секциях одинаковый, п
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
+  letter-spacing: .03em;
   color: var(--text-c-1);
 }
 
@@ -168,6 +173,7 @@ footer > .logo {
 }
 
 footer > address {
+  letter-spacing: .03em;
   line-height: 1.715;
   color: var(--white-c);
 }
@@ -179,6 +185,7 @@ footer > address li { /* Эти блоки нужны из-за косяка в 
 footer a {
   text-decoration: none;
   font-style: normal;
+  letter-spacing: .03em;
   color: rgba(var(--white-c));
   opacity: 60%;
 }
