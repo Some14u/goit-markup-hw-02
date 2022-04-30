@@ -182,7 +182,7 @@ footer > address li { /* Эти блоки нужны из-за косяка в 
   height: 1.5em; /* Указано так, чтоб масштабировалось, если изменят размер шрифта */
 }
 
-footer a {
+footer ul a {
   text-decoration: none;
   font-style: normal;
   letter-spacing: .03em;
