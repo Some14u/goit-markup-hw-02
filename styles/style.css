@@ -1,21 +1,23 @@
 :root {
   background-color: #e5e5e5;
+  --prima-c: #2196f3;
+  --prima-c2: #188ce8;
   --gray-bg: 47, 48, 58;
   --light-gray: #f5f4fa;
-  --blue-c: #2196f3;
-  --blue-c2: #188ce8;
+  --light-gray2: #afb1b8;
+  --light-gray3: #eceaef;
   --white-c: #fff;
   --black-c: #000;
+  --border-c1: #ececec;
+  --border-c2: #eee;
   --text-c-1: #212121;
   --text-c-2: #757575;
 }
 
-
-
 body {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  width: 1600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: .03em;
   background-color: var(--white-c);
@@ -29,26 +31,29 @@ button[type="button"] {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* Header */
 
 
 .logo {
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.192em;
   letter-spacing: .03em;
   color: var(--black-c);
 }
 
 .logo > span {
-  color: var(--blue-c);
+  color: var(--prima-c);
 }
 
 .main-menu li a {
-  text-decoration: none;
+  margin-right: 50px;
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: .02em;
@@ -57,25 +62,27 @@ button[type="button"] {
 
 .main-menu li a:hover,
 .main-menu li a:focus {
+  color: var(--prima-c);
+}
+
+.main-menu li.selected a {
+  pointer-events: none;
+  cursor: default;
   color: var(--blue-c);
 }
 
-header .email,
-header .phone {
-  text-decoration: none;
+header .address a {
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: .02em;
   color: var(--text-c-2);
 }
 
-.email:hover,
-.phone:hover,
-.email:focus,
-.phone:focus {
-    color: var(--blue-c);
+.address a:hover, /* И для header, и для footer */
+.address a:focus {
+  opacity: 1;
+  color: var(--prima-c);
 }
-
 
 /* Order */
 
@@ -98,16 +105,16 @@ header .phone {
   line-height: 1.88;
   letter-spacing: .06em;
   color: var(--white-c);
-  background: var(--blue-c);
+  background: var(--prima-c);
 }
 
 .order-section .order:hover {
-  background: var(--blue-c2);
+  background: var(--prima-c2);
 }
 
 /* About us */
 
-.feature > h3 {
+.feature > h2 {
   font-weight: 700;
   line-height: 1.143;
   letter-spacing: .03em;
@@ -121,10 +128,11 @@ header .phone {
   color: var(--text-c-2);
 }
 
-h2 { /* Заголовок во всех секциях одинаковый, поэтому без селектора */
+h1 { /* Заголовок во всех секциях одинаковый, поэтому без селектора */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
+  text-align: center;
   letter-spacing: .03em;
   color: var(--text-c-1);
 }
@@ -157,7 +165,7 @@ h2 { /* Заголовок во всех секциях одинаковый, п
 }
 
 .team-member-info p {
-  font-weight: 400;
+  font-weight: 400; /* Нужно оставить, переопределяет предыдущее правило */
   color: var(--text-c-2);
 }
 
@@ -182,11 +190,9 @@ footer > address li { /* Эти блоки нужны из-за косяка в 
   height: 1.5em; /* Указано так, чтоб масштабировалось, если изменят размер шрифта */
 }
 
-footer ul a {
-  text-decoration: none;
-  font-style: normal;
+footer > address a {
   letter-spacing: .03em;
-  color: rgba(var(--white-c));
+  color: var(--white-c);
   opacity: 60%;
 }
 
@@ -208,25 +214,29 @@ footer ul a {
   background-color: var(--light-gray);
 }
 
+.proj-filter button:hover,
+.proj-filter button:focus {
+  background-color: var(--light-gray3);
+}
+
+
 .proj-filter button.selected {
-  background-color: var(--blue-c);
+  background-color: var(--prima-c);
   color: var(--white-c);
 }
 
 /* Single project */
 
-.project {
-  cursor: pointer;
-}
 
-.project > div {
+
+.project div {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.project h3 {
+.project h2 {
   color: var(--text-c-1);
 }
 
