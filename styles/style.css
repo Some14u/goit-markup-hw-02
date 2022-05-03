@@ -68,7 +68,7 @@ a {
 .main-menu li.selected a {
   pointer-events: none;
   cursor: default;
-  color: var(--blue-c);
+  color: var(--prima-c);
 }
 
 header .address a {
@@ -214,12 +214,10 @@ footer > address a {
   background-color: var(--light-gray);
 }
 
+
+
 .proj-filter button:hover,
-.proj-filter button:focus {
-  background-color: var(--light-gray3);
-}
-
-
+.proj-filter button:focus,
 .proj-filter button.selected {
   background-color: var(--prima-c);
   color: var(--white-c);
